@@ -1,0 +1,17 @@
+/* Task: Using Combinator Selectors */
+
+/* Use the Descendant combinator to remove list-style type and text underline */
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Use the Child combinator to display the menu list items inline */
+nav > ul > li {
+    display: inline;
+}
+
+/* Use the Adjacent sibling combinator to apply some margin between the menu list items */
+nav > ul > li + li {
+    margin-left: 20px;
+}

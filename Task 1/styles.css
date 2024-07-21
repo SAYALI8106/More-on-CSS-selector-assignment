@@ -1,0 +1,54 @@
+/* Task B: Using Combinator Selectors */
+
+/* Target all anchor tags and change text color to red */
+a {
+    color: red;
+}
+
+/* Target only the first <h2> tag and change text and background color */
+header > nav > h2:first-of-type {
+    color: white;
+    background-color: black;
+}
+
+/* Target the first <p> tag and change the text color to red */
+header > nav > p:first-of-type {
+    color: red;
+}
+
+/* Task C: Using Attribute Selectors */
+
+/* Target anchor tags with "href" attribute and change color to red and remove text underline */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* Target anchor tag with class name "active", change text color, and underline text */
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Target anchor tag with the target attribute value "_self" and change the background color */
+a[target="_self"] {
+    background-color: yellow;
+}
+
+/* Task D: Using Pseudo-selectors */
+
+/* Target the last <p> tag and add "..." after its value */
+header > nav > p:last-of-type::after {
+    content: '...';
+}
+
+/* Target the list bullet points and change their color */
+ul li::marker {
+    color: green;
+}
+
+/* Target the first letter of the second <p> tag and change the color to red and increase font size */
+header > nav > p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 30px;
+}

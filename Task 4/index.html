@@ -1,0 +1,38 @@
+<!-- Q4. Using any of the Pseudo element selectors, add any random words after and before the given HTML tag
+| An example should be one HTML button tag
+| When hovering the color should be changed and the shadow of the button should be added.
+| Proder padding space should be given.
+| The cursor style should also be changed to a pointer on hover. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Button Example</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .button {
+            margin: 10px 20px;
+            padding: 20px 30px;
+            border: none;
+            background-color: rgb(41, 89, 202);
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .button:hover {
+            box-shadow: 10px 7px 5px  rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">PW Skills</button>
+</body>
+</html>
